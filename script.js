@@ -30,7 +30,7 @@ const ctx = document.getElementById("progressionChart").getContext("2d");
 new Chart(ctx, {
   type: "line",
   data: {
-    labels: Array.from({ length: 365 * 2 }, (_, i) => i + 1),
+    labels: Array.from({ length: 365 }, (_, i) => i + 1),
     datasets: [
       {
         label: "Normal Origin, normal effort",
